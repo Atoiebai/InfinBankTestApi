@@ -1,30 +1,12 @@
 package com.infinbank.models;
 
-public class Shape {
-    String shapesDescription;
-    double square;
-  double perimeter;
+public interface Shape {
 
-    public double getPerimeter() {
-        return perimeter;
-    }
+    void setPerimeter();
+    double getPerimeter();
 
-    public void setPerimeter(double perimeter) {
-        this.perimeter = perimeter;
-    }
+    void setSquare();
 
-    public void setSquare(double x) {
-     square = x;
-    }
- public void setShapesDescription(String x) {
-     shapesDescription = x;
-    }
+    double getSquare();
 
-    public double getSquare() {
-        return square;
-    }
-
-    public String getShapesDescription() {
-        return shapesDescription;
-    }
 }
