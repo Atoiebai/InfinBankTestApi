@@ -84,7 +84,7 @@ public class MainController {
      * @return Rectangle in JSON or Bad Request
      */
     @GetMapping("/rectangle")
-    public ResponseEntity<Shape> getRectangle(Double a, Double b) {
+    public ResponseEntity<Shape> getRectangle(double a, double b) {
         //Shapes side should be positive
         if (a <= 0 || b <= 0) return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 

@@ -3,7 +3,7 @@ package com.infinbank.models;
 
 public class Round implements Shape{
 
-    private final Double radius;
+    private final double radius;
     private double perimeter;
     private double square;
 

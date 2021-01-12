@@ -2,8 +2,8 @@ package com.infinbank.models;
 
 public class Rectangle implements Shape{
 
-    private final Double firstSide;
-    private final Double secondSide;
+    private final double firstSide;
+    private final double secondSide;
     private double perimeter;
     private double square;
 

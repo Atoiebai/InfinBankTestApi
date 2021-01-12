@@ -2,9 +2,9 @@ package com.infinbank.models;
 
 public class Triangle implements Shape{
 
-    private final Double firstSide;
-    private final Double secondSide;
-    private final Double thirdSide;
+    private final double firstSide;
+    private final double secondSide;
+    private final double thirdSide;
     private double perimeter;
     private double square;
 
