@@ -4,7 +4,6 @@ import com.infinbank.models.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
  * Every method of controller used to
  * create new Object
  * based on HttpRequest parameters
- *
  * Each method checks if arguments are appropriate, returns BAD_REQUEST if they are not
  */
 
@@ -28,7 +26,7 @@ public class MainController {
      * @return Triangle in JSON or Bad Request
      */
     @GetMapping("/triangle")
-    public ResponseEntity<Shape> getTriangle(@PathVariable double a,@PathVariable double b,@PathVariable double c) {
+    public ResponseEntity<Shape> getTriangle( double a, double b, double c) {
         //Shapes side should be positive
         if (a <= 0 || b <= 0 || c <= 0) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
