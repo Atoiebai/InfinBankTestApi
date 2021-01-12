@@ -2,9 +2,9 @@ package com.infinbank.models;
 
 public class Triangle implements Shape{
 
-    private double firstSide;
-    private double secondSide;
-    private double thirdSide;
+    private final Double firstSide;
+    private final Double secondSide;
+    private final Double thirdSide;
     private double perimeter;
     private double square;
 
@@ -15,30 +15,6 @@ public class Triangle implements Shape{
             this.thirdSide = c;
         }
         else throw new IllegalArgumentException();
-    }
-
-    public double getThirdSide() {
-        return thirdSide;
-    }
-
-    public void setThirdSide(int thirdSide) {
-        this.thirdSide = thirdSide;
-    }
-
-    public double getFirstSide() {
-        return firstSide;
-    }
-
-    public void setFirstSide(int firstSide) {
-        this.firstSide = firstSide;
-    }
-
-    public double getSecondSide() {
-        return secondSide;
-    }
-
-    public void setSecondSide(int secondSide) {
-        this.secondSide = secondSide;
     }
 
     @Override

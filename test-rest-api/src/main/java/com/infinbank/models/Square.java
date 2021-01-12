@@ -2,19 +2,11 @@ package com.infinbank.models;
 
 public class Square implements Shape{
 
-    private double eachSide;
+    private final double eachSide;
     private double perimeter;
     private double square;
 
     public Square(double eachSide) {
-        this.eachSide = eachSide;
-    }
-
-    public double getEachSide() {
-        return eachSide;
-    }
-
-    public void setEachSide(int eachSide) {
         this.eachSide = eachSide;
     }
 

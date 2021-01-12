@@ -3,18 +3,9 @@ package com.infinbank.models;
 
 public class Round implements Shape{
 
-    private double radius;
+    private final Double radius;
     private double perimeter;
     private double square;
-
-    public double getRadius() {
-        return radius;
-    }
-
-    public void setRadius(double radius) {
-        this.radius = radius;
-    }
-
 
     public Round(double radius) {
         this.radius = radius;
